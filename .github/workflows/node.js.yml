@@ -1,0 +1,19 @@
+name: github-hosted-pipeline 
+
+on:
+  push:
+    branches:
+         - master
+         - main
+         - development 
+   workflow_dispatch:
+
+    job:
+     job1:
+       runs-on: ubuntu-latest 
+       steps:
+         -uses: action/checkout4.2.2
+         -name: intruction
+          run: echomy "my name is ikem, thank you."
+          shall: bash
+     
